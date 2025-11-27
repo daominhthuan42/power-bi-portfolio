@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a765536dc6dece028f6eac573377783e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a765536dc6dece028f6eac573377783e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a765536dc6dece028f6eac573377783e = L.map(
+                "map_a765536dc6dece028f6eac573377783e",
+                {
+                    center: [39.7837304, -100.445882],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_050238fa7330d3880fdabebcb763a6bf = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_050238fa7330d3880fdabebcb763a6bf.addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var marker_7ba0264032b19438765684d748ea6a0b = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_5277783a862e18cb9ba4a04324f4359a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7ba0264032b19438765684d748ea6a0b.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> United States<br>
+            <b>Number Order:</b> 2665<br>
+            <b>GMV:</b> $413,843.11
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ba0264032b19438765684d748ea6a0b.setIcon(icon_5277783a862e18cb9ba4a04324f4359a);
+            
+    
+            var marker_97f0f2abf3f02ccc464b061eb8b415d1 = L.marker(
+                [22.3511148, 78.6677428],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_432d5ec49628ca690aa69c0ae36b0db0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_97f0f2abf3f02ccc464b061eb8b415d1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> India<br>
+            <b>Number Order:</b> 1631<br>
+            <b>GMV:</b> $267,649.91
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97f0f2abf3f02ccc464b061eb8b415d1.setIcon(icon_432d5ec49628ca690aa69c0ae36b0db0);
+            
+    
+            var marker_c8e52e4b84cbf99d05992438ec8b4e38 = L.marker(
+                [54.7023545, -3.2765753],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_2374f82e03e95ab513b200f62223cf69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c8e52e4b84cbf99d05992438ec8b4e38.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> United Kingdom<br>
+            <b>Number Order:</b> 867<br>
+            <b>GMV:</b> $135,028.22
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8e52e4b84cbf99d05992438ec8b4e38.setIcon(icon_2374f82e03e95ab513b200f62223cf69);
+            
+    
+            var marker_136bbcb96036c266c4508a51de15335a = L.marker(
+                [51.1638175, 10.4478313],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_258dd4d96a125f5142ee085eb571a00d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_136bbcb96036c266c4508a51de15335a.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Germany<br>
+            <b>Number Order:</b> 579<br>
+            <b>GMV:</b> $97,471.24
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_136bbcb96036c266c4508a51de15335a.setIcon(icon_258dd4d96a125f5142ee085eb571a00d);
+            
+    
+            var marker_d8fde5b671be30ba995d8d1708626423 = L.marker(
+                [61.0666922, -107.991707],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_351f8e099a9a39fb47155d23f25090f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d8fde5b671be30ba995d8d1708626423.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Canada<br>
+            <b>Number Order:</b> 566<br>
+            <b>GMV:</b> $91,081.87
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8fde5b671be30ba995d8d1708626423.setIcon(icon_351f8e099a9a39fb47155d23f25090f2);
+            
+    
+            var marker_71b540c9940d8335f5b51938d2db4b2f = L.marker(
+                [46.603354, 1.8883335],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_8155e432d9e58cfcc8e885b87dd578bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_71b540c9940d8335f5b51938d2db4b2f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> France<br>
+            <b>Number Order:</b> 550<br>
+            <b>GMV:</b> $81,767.78
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71b540c9940d8335f5b51938d2db4b2f.setIcon(icon_8155e432d9e58cfcc8e885b87dd578bf);
+            
+    
+            var marker_0ba8f7f3a0b20606f82380835abf3c6f = L.marker(
+                [-10.3333333, -53.2],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_868116fdca3704a4405b9136ac2243db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0ba8f7f3a0b20606f82380835abf3c6f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Brazil<br>
+            <b>Number Order:</b> 536<br>
+            <b>GMV:</b> $93,336.73
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ba8f7f3a0b20606f82380835abf3c6f.setIcon(icon_868116fdca3704a4405b9136ac2243db);
+            
+    
+            var marker_62f6379597fcefa5fcec77d75ba705ed = L.marker(
+                [-24.7761086, 134.755],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_5ef8bc9ffc04e52c35a9641bb5be91c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_62f6379597fcefa5fcec77d75ba705ed.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Australia<br>
+            <b>Number Order:</b> 433<br>
+            <b>GMV:</b> $74,905.04
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62f6379597fcefa5fcec77d75ba705ed.setIcon(icon_5ef8bc9ffc04e52c35a9641bb5be91c8);
+            
+    
+            var marker_ef34de1780eb67282534f5c13aab0dd9 = L.marker(
+                [39.3260685, -4.8379791],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_445d817c2ec979e0bd6ea9f17a58c2e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ef34de1780eb67282534f5c13aab0dd9.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Spain<br>
+            <b>Number Order:</b> 427<br>
+            <b>GMV:</b> $65,453.75
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef34de1780eb67282534f5c13aab0dd9.setIcon(icon_445d817c2ec979e0bd6ea9f17a58c2e6);
+            
+    
+            var marker_21fc65534516843858521312856a32de = L.marker(
+                [52.2434979, 5.6343227],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_1fecff9371d89bcc15d81e26eb68aefc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_21fc65534516843858521312856a32de.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Netherlands<br>
+            <b>Number Order:</b> 422<br>
+            <b>GMV:</b> $66,689.92
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21fc65534516843858521312856a32de.setIcon(icon_1fecff9371d89bcc15d81e26eb68aefc);
+            
+    
+            var marker_8e77efe56fd7ca28539966bdc165b900 = L.marker(
+                [23.6585116, -102.0077097],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_1dee74588d9d92342e91288a28239c79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8e77efe56fd7ca28539966bdc165b900.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Mexico<br>
+            <b>Number Order:</b> 325<br>
+            <b>GMV:</b> $47,955.44
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e77efe56fd7ca28539966bdc165b900.setIcon(icon_1dee74588d9d92342e91288a28239c79);
+            
+    
+            var marker_53202b9ccb37048543d95ebf16323193 = L.marker(
+                [42.6384261, 12.674297],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_f36675a389e45ea444b9ee0787ea254a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_53202b9ccb37048543d95ebf16323193.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Italy<br>
+            <b>Number Order:</b> 312<br>
+            <b>GMV:</b> $49,818.28
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53202b9ccb37048543d95ebf16323193.setIcon(icon_f36675a389e45ea444b9ee0787ea254a);
+            
+    
+            var marker_6ea2bf9b0489d2dfecdf12b8526c168c = L.marker(
+                [35.000074, 104.999927],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_4503e3f6f820f157eab472def7a479de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6ea2bf9b0489d2dfecdf12b8526c168c.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> China<br>
+            <b>Number Order:</b> 236<br>
+            <b>GMV:</b> $39,170.13
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ea2bf9b0489d2dfecdf12b8526c168c.setIcon(icon_4503e3f6f820f157eab472def7a479de);
+            
+    
+            var marker_f3d87c5d968c4fdd92ba768a3ca0e613 = L.marker(
+                [36.5748441, 139.2394179],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_ce78950cf3e92494490190374be1e642 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f3d87c5d968c4fdd92ba768a3ca0e613.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> Japan<br>
+            <b>Number Order:</b> 230<br>
+            <b>GMV:</b> $36,312.72
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3d87c5d968c4fdd92ba768a3ca0e613.setIcon(icon_ce78950cf3e92494490190374be1e642);
+            
+    
+            var marker_29718ff41968b57e175ca3885a9b9eb3 = L.marker(
+                [-28.8166236, 24.991639],
+                {
+}
+            ).addTo(map_a765536dc6dece028f6eac573377783e);
+        
+    
+            var icon_16b6d3716d53df570925c0b2e7979db1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_29718ff41968b57e175ca3885a9b9eb3.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Country:</b> South Africa<br>
+            <b>Number Order:</b> 221<br>
+            <b>GMV:</b> $35,347.03
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29718ff41968b57e175ca3885a9b9eb3.setIcon(icon_16b6d3716d53df570925c0b2e7979db1);
+            
+</script>
+</html>
