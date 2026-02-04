@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e6b70f06ea296279f1898bbaadf0677 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e6b70f06ea296279f1898bbaadf0677" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2e6b70f06ea296279f1898bbaadf0677 = L.map(
+                "map_2e6b70f06ea296279f1898bbaadf0677",
+                {
+                    center: [30.2711286, -97.7436995],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c28c5f4f4e917b52f1b672aae412882 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3c28c5f4f4e917b52f1b672aae412882.addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var marker_b060b48f3a20e18f5f95ec5e606426f8 = L.marker(
+                [30.2711286, -97.7436995],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_90fce625b789ff9443ed14d4f5eded1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b060b48f3a20e18f5f95ec5e606426f8.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Austin<br>
+            <b>Number Customer:</b> 56<br>
+            <b>GMV:</b> $453,508.80<br>
+            <b>Total Account Balance:</b> $6,208,693.45<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b060b48f3a20e18f5f95ec5e606426f8.setIcon(icon_90fce625b789ff9443ed14d4f5eded1b);
+            
+    
+            var marker_d9adec6c358a2f02343f422d63e73677 = L.marker(
+                [35.1460249, -90.0517638],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_13746b6a4edbdd6549aba5d3f6beb122 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d9adec6c358a2f02343f422d63e73677.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Memphis<br>
+            <b>Number Customer:</b> 58<br>
+            <b>GMV:</b> $445,646.01<br>
+            <b>Total Account Balance:</b> $8,017,169.44<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9adec6c358a2f02343f422d63e73677.setIcon(icon_13746b6a4edbdd6549aba5d3f6beb122);
+            
+    
+            var marker_f26cfa51570d008b55b97134fd25cb31 = L.marker(
+                [35.4729886, -97.5170536],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_028b3d1ec3299f064344d6e44ad09f64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f26cfa51570d008b55b97134fd25cb31.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Oklahoma City<br>
+            <b>Number Customer:</b> 64<br>
+            <b>GMV:</b> $444,559.54<br>
+            <b>Total Account Balance:</b> $6,746,933.37<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f26cfa51570d008b55b97134fd25cb31.setIcon(icon_028b3d1ec3299f064344d6e44ad09f64);
+            
+    
+            var marker_9ed3d3c420de7a8e04dfc7b45e40e940 = L.marker(
+                [29.4246002, -98.4951405],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_85752b2d10b77924600638a50918293c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9ed3d3c420de7a8e04dfc7b45e40e940.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> San Antonio<br>
+            <b>Number Customer:</b> 54<br>
+            <b>GMV:</b> $423,005.49<br>
+            <b>Total Account Balance:</b> $5,463,552.88<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ed3d3c420de7a8e04dfc7b45e40e940.setIcon(icon_85752b2d10b77924600638a50918293c);
+            
+    
+            var marker_4bb32760286dc229375de03bca52f2fe = L.marker(
+                [32.753177, -97.3327459],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_e56f2b4ba4b80f75f6ebd5e2b73987b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4bb32760286dc229375de03bca52f2fe.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Fort Worth<br>
+            <b>Number Customer:</b> 67<br>
+            <b>GMV:</b> $422,279.87<br>
+            <b>Total Account Balance:</b> $7,987,814.21<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bb32760286dc229375de03bca52f2fe.setIcon(icon_e56f2b4ba4b80f75f6ebd5e2b73987b9);
+            
+    
+            var marker_f3c73f8a3f0abef6723da08e00172e47 = L.marker(
+                [30.3262247, -81.6579179],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_2202bb021077b3e0b926514aafcb10ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f3c73f8a3f0abef6723da08e00172e47.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Jacksonville<br>
+            <b>Number Customer:</b> 57<br>
+            <b>GMV:</b> $411,470.80<br>
+            <b>Total Account Balance:</b> $5,148,423.14<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3c73f8a3f0abef6723da08e00172e47.setIcon(icon_2202bb021077b3e0b926514aafcb10ea);
+            
+    
+            var marker_ef8b7b9a3d66f2663966da9ebb33fcdb = L.marker(
+                [33.4484367, -112.074141],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_8b065791c554075e2a001fedd9cd78fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ef8b7b9a3d66f2663966da9ebb33fcdb.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Phoenix<br>
+            <b>Number Customer:</b> 51<br>
+            <b>GMV:</b> $410,725.84<br>
+            <b>Total Account Balance:</b> $6,618,303.59<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef8b7b9a3d66f2663966da9ebb33fcdb.setIcon(icon_8b065791c554075e2a001fedd9cd78fb);
+            
+    
+            var marker_5833d7639e121c0958e150888e2b50d3 = L.marker(
+                [32.2228765, -110.974847],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_a4834850c4b6bf9fb6d5afdbddd376ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5833d7639e121c0958e150888e2b50d3.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Tucson<br>
+            <b>Number Customer:</b> 65<br>
+            <b>GMV:</b> $401,159.06<br>
+            <b>Total Account Balance:</b> $6,812,677.28<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5833d7639e121c0958e150888e2b50d3.setIcon(icon_a4834850c4b6bf9fb6d5afdbddd376ac);
+            
+    
+            var marker_be89fae9a68e62156831aefb5ab2fb0b = L.marker(
+                [42.3315509, -83.0466403],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_4b6784eaa2436ff75e50af1abbf1bcad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_be89fae9a68e62156831aefb5ab2fb0b.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Detroit<br>
+            <b>Number Customer:</b> 61<br>
+            <b>GMV:</b> $396,371.02<br>
+            <b>Total Account Balance:</b> $6,408,707.49<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be89fae9a68e62156831aefb5ab2fb0b.setIcon(icon_4b6784eaa2436ff75e50af1abbf1bcad);
+            
+    
+            var marker_19bb6f2a9834e905c791bb682959c508 = L.marker(
+                [39.9527237, -75.1635262],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_f4b988b30f2070373e69812bc59820d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_19bb6f2a9834e905c791bb682959c508.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Philadelphia<br>
+            <b>Number Customer:</b> 63<br>
+            <b>GMV:</b> $395,031.93<br>
+            <b>Total Account Balance:</b> $6,997,214.94<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19bb6f2a9834e905c791bb682959c508.setIcon(icon_f4b988b30f2070373e69812bc59820d6);
+            
+    
+            var marker_cdc74ae8c07a3ff84c61a285f39b33f0 = L.marker(
+                [33.4151005, -111.831455],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_030006ac17469fae7e914060d0f5c731 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cdc74ae8c07a3ff84c61a285f39b33f0.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Mesa<br>
+            <b>Number Customer:</b> 58<br>
+            <b>GMV:</b> $392,151.10<br>
+            <b>Total Account Balance:</b> $5,994,138.91<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdc74ae8c07a3ff84c61a285f39b33f0.setIcon(icon_030006ac17469fae7e914060d0f5c731);
+            
+    
+            var marker_ccfa95c240d978650695288e3f54edd8 = L.marker(
+                [31.7601001, -106.4870476],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_a1aa81e9a267a41bf1e69a20abcdec5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ccfa95c240d978650695288e3f54edd8.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> El Paso<br>
+            <b>Number Customer:</b> 44<br>
+            <b>GMV:</b> $388,970.11<br>
+            <b>Total Account Balance:</b> $5,484,965.89<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ccfa95c240d978650695288e3f54edd8.setIcon(icon_a1aa81e9a267a41bf1e69a20abcdec5b);
+            
+    
+            var marker_45ad97af39d74b0396f6bdd9c023be7c = L.marker(
+                [38.8339578, -104.825348],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_5dec7b123f7404d98e962fa7bfab2fc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_45ad97af39d74b0396f6bdd9c023be7c.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Colorado Springs<br>
+            <b>Number Customer:</b> 58<br>
+            <b>GMV:</b> $388,458.85<br>
+            <b>Total Account Balance:</b> $6,134,334.27<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45ad97af39d74b0396f6bdd9c023be7c.setIcon(icon_5dec7b123f7404d98e962fa7bfab2fc6);
+            
+    
+            var marker_70c2ea22114cc08537a29878500129f1 = L.marker(
+                [37.3361663, -121.890591],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_3c78dc58ff0e4caee51053ed87ea5def = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_70c2ea22114cc08537a29878500129f1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> San Jose<br>
+            <b>Number Customer:</b> 51<br>
+            <b>GMV:</b> $374,680.89<br>
+            <b>Total Account Balance:</b> $6,625,346.02<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70c2ea22114cc08537a29878500129f1.setIcon(icon_3c78dc58ff0e4caee51053ed87ea5def);
+            
+    
+            var marker_97124d39c750ce3d8100e43a9d125ad9 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_02c877793f61840cb7fc815cc2c34b23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_97124d39c750ce3d8100e43a9d125ad9.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Columbus<br>
+            <b>Number Customer:</b> 52<br>
+            <b>GMV:</b> $372,989.21<br>
+            <b>Total Account Balance:</b> $6,051,210.09<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97124d39c750ce3d8100e43a9d125ad9.setIcon(icon_02c877793f61840cb7fc815cc2c34b23);
+            
+    
+            var marker_f291c6341fcb704b0316c01adc794257 = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_7a0006b3f4c6751f7cd227132b65f98a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f291c6341fcb704b0316c01adc794257.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> San Diego<br>
+            <b>Number Customer:</b> 57<br>
+            <b>GMV:</b> $372,289.44<br>
+            <b>Total Account Balance:</b> $6,451,447.69<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f291c6341fcb704b0316c01adc794257.setIcon(icon_7a0006b3f4c6751f7cd227132b65f98a);
+            
+    
+            var marker_6fafcbe53d769cd3ab88958949cbeca6 = L.marker(
+                [29.7589382, -95.3676974],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_7e4ef6315573fc4ac3af90d054b1684e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6fafcbe53d769cd3ab88958949cbeca6.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Houston<br>
+            <b>Number Customer:</b> 59<br>
+            <b>GMV:</b> $371,027.00<br>
+            <b>Total Account Balance:</b> $6,648,907.85<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fafcbe53d769cd3ab88958949cbeca6.setIcon(icon_7e4ef6315573fc4ac3af90d054b1684e);
+            
+    
+            var marker_a21a060f1f7ad688e727ffb4e5c87e78 = L.marker(
+                [34.0536909, -118.242766],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_542e3bd051e874199703722764954dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a21a060f1f7ad688e727ffb4e5c87e78.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Los Angeles<br>
+            <b>Number Customer:</b> 62<br>
+            <b>GMV:</b> $365,411.83<br>
+            <b>Total Account Balance:</b> $5,975,856.35<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a21a060f1f7ad688e727ffb4e5c87e78.setIcon(icon_542e3bd051e874199703722764954dd6);
+            
+    
+            var marker_3818bfd4241b263342cdf7705ae4c878 = L.marker(
+                [41.2587459, -95.9383758],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_78f6e94abd9c2c40890415769bfdb723 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3818bfd4241b263342cdf7705ae4c878.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Omaha<br>
+            <b>Number Customer:</b> 63<br>
+            <b>GMV:</b> $361,538.47<br>
+            <b>Total Account Balance:</b> $6,405,139.51<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3818bfd4241b263342cdf7705ae4c878.setIcon(icon_78f6e94abd9c2c40890415769bfdb723);
+            
+    
+            var marker_ad3fbd63c9791f456562d0df6690fcc6 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_1060faaa52005ec224da247864dcf84e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ad3fbd63c9791f456562d0df6690fcc6.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Miami<br>
+            <b>Number Customer:</b> 63<br>
+            <b>GMV:</b> $356,852.71<br>
+            <b>Total Account Balance:</b> $5,465,387.21<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad3fbd63c9791f456562d0df6690fcc6.setIcon(icon_1060faaa52005ec224da247864dcf84e);
+            
+    
+            var marker_76da154417361b3dcdb6e0b914ad2c45 = L.marker(
+                [39.100105, -94.5781416],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_388df33dd860fa3accd1e8037de18a5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_76da154417361b3dcdb6e0b914ad2c45.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Kansas City<br>
+            <b>Number Customer:</b> 57<br>
+            <b>GMV:</b> $355,066.98<br>
+            <b>Total Account Balance:</b> $5,658,807.56<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76da154417361b3dcdb6e0b914ad2c45.setIcon(icon_388df33dd860fa3accd1e8037de18a5c);
+            
+    
+            var marker_be7c29e42fccf95aba790c44ac005522 = L.marker(
+                [35.7803977, -78.6390989],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_aa21a149c3a3baed340f89fbad00c883 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_be7c29e42fccf95aba790c44ac005522.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Raleigh<br>
+            <b>Number Customer:</b> 54<br>
+            <b>GMV:</b> $347,001.82<br>
+            <b>Total Account Balance:</b> $5,563,439.16<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be7c29e42fccf95aba790c44ac005522.setIcon(icon_aa21a149c3a3baed340f89fbad00c883);
+            
+    
+            var marker_95099700b32d494a508909bbcfb95efd = L.marker(
+                [35.2272086, -80.8430827],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_92572eb41e04e7c615794778350850f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_95099700b32d494a508909bbcfb95efd.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Charlotte<br>
+            <b>Number Customer:</b> 65<br>
+            <b>GMV:</b> $340,705.92<br>
+            <b>Total Account Balance:</b> $5,821,305.91<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95099700b32d494a508909bbcfb95efd.setIcon(icon_92572eb41e04e7c615794778350850f9);
+            
+    
+            var marker_064736e9305f0f6c8ee81378b122e48f = L.marker(
+                [38.8950368, -77.0365427],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_775cb87caee8ec4489bb7cde9803e4f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_064736e9305f0f6c8ee81378b122e48f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Washington<br>
+            <b>Number Customer:</b> 43<br>
+            <b>GMV:</b> $336,494.04<br>
+            <b>Total Account Balance:</b> $4,799,083.10<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_064736e9305f0f6c8ee81378b122e48f.setIcon(icon_775cb87caee8ec4489bb7cde9803e4f6);
+            
+    
+            var marker_a6c6d9b993110ea836938b5aab39b51e = L.marker(
+                [36.1674263, -115.1484131],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_7a83f41a294ded4e0721354697c6fd48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a6c6d9b993110ea836938b5aab39b51e.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Las Vegas<br>
+            <b>Number Customer:</b> 53<br>
+            <b>GMV:</b> $336,290.07<br>
+            <b>Total Account Balance:</b> $6,909,961.94<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6c6d9b993110ea836938b5aab39b51e.setIcon(icon_7a83f41a294ded4e0721354697c6fd48);
+            
+    
+            var marker_870a97e7ae37da141cb5ead944b91113 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_f856a3cab1b479886e165b1708ebb33b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_870a97e7ae37da141cb5ead944b91113.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> New York<br>
+            <b>Number Customer:</b> 54<br>
+            <b>GMV:</b> $334,483.61<br>
+            <b>Total Account Balance:</b> $6,204,763.43<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_870a97e7ae37da141cb5ead944b91113.setIcon(icon_f856a3cab1b479886e165b1708ebb33b);
+            
+    
+            var marker_083fb2620d7f652de2584f5bf31bb45b = L.marker(
+                [42.3588336, -71.0578303],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_1b63541ba01af68f95f8f0d0ccf43f02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_083fb2620d7f652de2584f5bf31bb45b.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Boston<br>
+            <b>Number Customer:</b> 51<br>
+            <b>GMV:</b> $333,493.48<br>
+            <b>Total Account Balance:</b> $5,960,999.13<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_083fb2620d7f652de2584f5bf31bb45b.setIcon(icon_1b63541ba01af68f95f8f0d0ccf43f02);
+            
+    
+            var marker_4d03e75b811840c335704a61ceaf2cb4 = L.marker(
+                [37.7879363, -122.4075201],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_ac3ccfd34e884a226ad6b58325621b9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4d03e75b811840c335704a61ceaf2cb4.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> San Francisco<br>
+            <b>Number Customer:</b> 54<br>
+            <b>GMV:</b> $330,743.80<br>
+            <b>Total Account Balance:</b> $4,910,054.56<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d03e75b811840c335704a61ceaf2cb4.setIcon(icon_ac3ccfd34e884a226ad6b58325621b9b);
+            
+    
+            var marker_82f78c37e0c2c241f79b47659be9cc86 = L.marker(
+                [33.7544657, -84.3898151],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_755b8eacbeddb827eef52585853e198f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_82f78c37e0c2c241f79b47659be9cc86.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Atlanta<br>
+            <b>Number Customer:</b> 58<br>
+            <b>GMV:</b> $325,991.46<br>
+            <b>Total Account Balance:</b> $6,443,819.56<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_82f78c37e0c2c241f79b47659be9cc86.setIcon(icon_755b8eacbeddb827eef52585853e198f);
+            
+    
+            var marker_bab37f56f5aa93fc2d1952089840a234 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_563b7c015d7df269af9bee475deda00d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bab37f56f5aa93fc2d1952089840a234.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Chicago<br>
+            <b>Number Customer:</b> 58<br>
+            <b>GMV:</b> $324,254.85<br>
+            <b>Total Account Balance:</b> $5,556,399.23<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bab37f56f5aa93fc2d1952089840a234.setIcon(icon_563b7c015d7df269af9bee475deda00d);
+            
+    
+            var marker_b74bf1e59e922a9cd1f99703b4ead4ff = L.marker(
+                [39.7683331, -86.1583502],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_b4a3518e31c48f2847102eb6c2c5e8e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b74bf1e59e922a9cd1f99703b4ead4ff.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Indianapolis<br>
+            <b>Number Customer:</b> 55<br>
+            <b>GMV:</b> $321,636.02<br>
+            <b>Total Account Balance:</b> $6,062,280.58<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b74bf1e59e922a9cd1f99703b4ead4ff.setIcon(icon_b4a3518e31c48f2847102eb6c2c5e8e9);
+            
+    
+            var marker_b8b345db4512affe693697c2d14b7cc2 = L.marker(
+                [39.7392364, -104.984862],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_21e92b595f0144a2dfc8566b5d01f848 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b8b345db4512affe693697c2d14b7cc2.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Denver<br>
+            <b>Number Customer:</b> 59<br>
+            <b>GMV:</b> $309,869.30<br>
+            <b>Total Account Balance:</b> $5,732,129.72<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8b345db4512affe693697c2d14b7cc2.setIcon(icon_21e92b595f0144a2dfc8566b5d01f848);
+            
+    
+            var marker_895eb43127ed376b9972aab711a998e2 = L.marker(
+                [36.8496579, -75.9760751],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_05e50fff10b886dc3fc1ebfe4bdcb32f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_895eb43127ed376b9972aab711a998e2.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Virginia Beach<br>
+            <b>Number Customer:</b> 53<br>
+            <b>GMV:</b> $300,237.18<br>
+            <b>Total Account Balance:</b> $5,187,823.38<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_895eb43127ed376b9972aab711a998e2.setIcon(icon_05e50fff10b886dc3fc1ebfe4bdcb32f);
+            
+    
+            var marker_ab2021aaae60716760c5aa8591359980 = L.marker(
+                [43.0386475, -87.9090751],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_852f26996080896442a3afc7ea8a301b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ab2021aaae60716760c5aa8591359980.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Milwaukee<br>
+            <b>Number Customer:</b> 55<br>
+            <b>GMV:</b> $295,409.51<br>
+            <b>Total Account Balance:</b> $4,616,429.54<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab2021aaae60716760c5aa8591359980.setIcon(icon_852f26996080896442a3afc7ea8a301b);
+            
+    
+            var marker_c558f84ebac0081c67a1965a4499a957 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_b83475633879b77a3f4553e8c2ce2b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c558f84ebac0081c67a1965a4499a957.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Seattle<br>
+            <b>Number Customer:</b> 59<br>
+            <b>GMV:</b> $293,827.01<br>
+            <b>Total Account Balance:</b> $6,938,717.47<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c558f84ebac0081c67a1965a4499a957.setIcon(icon_b83475633879b77a3f4553e8c2ce2b82);
+            
+    
+            var marker_4e660e8f9ff695f5a0ebca4d4f788887 = L.marker(
+                [36.1622767, -86.7742984],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_4cba1d50e661e7c056f59d422a690e45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4e660e8f9ff695f5a0ebca4d4f788887.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Nashville<br>
+            <b>Number Customer:</b> 49<br>
+            <b>GMV:</b> $291,082.13<br>
+            <b>Total Account Balance:</b> $5,039,821.80<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e660e8f9ff695f5a0ebca4d4f788887.setIcon(icon_4cba1d50e661e7c056f59d422a690e45);
+            
+    
+            var marker_203d3b7243f79cf5eff315c7b705fe4c = L.marker(
+                [39.2908816, -76.610759],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_17ed1a787f23f24be2e4c34996efd039 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_203d3b7243f79cf5eff315c7b705fe4c.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Baltimore<br>
+            <b>Number Customer:</b> 46<br>
+            <b>GMV:</b> $290,543.82<br>
+            <b>Total Account Balance:</b> $5,004,954.08<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_203d3b7243f79cf5eff315c7b705fe4c.setIcon(icon_17ed1a787f23f24be2e4c34996efd039);
+            
+    
+            var marker_586edcaca1dc4cc209dc93f679f53237 = L.marker(
+                [38.2542376, -85.759407],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_c7b66753ad7ec165adde296d636075ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_586edcaca1dc4cc209dc93f679f53237.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Louisville<br>
+            <b>Number Customer:</b> 49<br>
+            <b>GMV:</b> $285,415.38<br>
+            <b>Total Account Balance:</b> $5,558,365.00<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_586edcaca1dc4cc209dc93f679f53237.setIcon(icon_c7b66753ad7ec165adde296d636075ad);
+            
+    
+            var marker_d9a6d3eeae883fef07b6e18005ef3fca = L.marker(
+                [36.7394421, -119.78483],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_52c14fc5aaafa27a37e83b08fc6aa63e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d9a6d3eeae883fef07b6e18005ef3fca.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Fresno<br>
+            <b>Number Customer:</b> 57<br>
+            <b>GMV:</b> $259,966.18<br>
+            <b>Total Account Balance:</b> $5,674,682.11<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9a6d3eeae883fef07b6e18005ef3fca.setIcon(icon_52c14fc5aaafa27a37e83b08fc6aa63e);
+            
+    
+            var marker_2310e76c5d6081e3fd51a30c1a10f385 = L.marker(
+                [45.5202471, -122.674194],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_a9cfe51ab0b560b0aaf2098106fd4a0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2310e76c5d6081e3fd51a30c1a10f385.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Portland<br>
+            <b>Number Customer:</b> 41<br>
+            <b>GMV:</b> $257,216.24<br>
+            <b>Total Account Balance:</b> $3,589,363.30<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2310e76c5d6081e3fd51a30c1a10f385.setIcon(icon_a9cfe51ab0b560b0aaf2098106fd4a0e);
+            
+    
+            var marker_8f97f79905189657b704ac1d8d36f1b6 = L.marker(
+                [38.5810606, -121.493895],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_8ea6fa5f033579273c8360e233cb7ca0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8f97f79905189657b704ac1d8d36f1b6.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Sacramento<br>
+            <b>Number Customer:</b> 51<br>
+            <b>GMV:</b> $255,707.45<br>
+            <b>Total Account Balance:</b> $6,108,376.65<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f97f79905189657b704ac1d8d36f1b6.setIcon(icon_8ea6fa5f033579273c8360e233cb7ca0);
+            
+    
+            var marker_c39943537407198efc86968821ca10d4 = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_206ea052b8ee598b3f1239c478e28bc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c39943537407198efc86968821ca10d4.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Dallas<br>
+            <b>Number Customer:</b> 47<br>
+            <b>GMV:</b> $212,976.39<br>
+            <b>Total Account Balance:</b> $6,131,037.27<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c39943537407198efc86968821ca10d4.setIcon(icon_206ea052b8ee598b3f1239c478e28bc4);
+            
+    
+            var marker_089b71434eaf47d52a22c4564fae9b2a = L.marker(
+                [35.0841034, -106.650985],
+                {
+}
+            ).addTo(map_2e6b70f06ea296279f1898bbaadf0677);
+        
+    
+            var icon_fd021b1dc86bb7fdeff476e225348851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_089b71434eaf47d52a22c4564fae9b2a.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>Location:</b> Albuquerque<br>
+            <b>Number Customer:</b> 37<br>
+            <b>GMV:</b> $207,070.08<br>
+            <b>Total Account Balance:</b> $5,018,077.01<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_089b71434eaf47d52a22c4564fae9b2a.setIcon(icon_fd021b1dc86bb7fdeff476e225348851);
+            
+</script>
+</html>
