@@ -1,138 +1,213 @@
 # 🏬 Superstore Sales Analytics 🔍
 
-**Notebook:** `superstore-sales-analysis.ipynb`
-**Author:** Đào Minh Thuấn
-**Project Type:** Python (EDA, Customer Analytics, Business Insights)
+**Notebook:** `superstore-sales-analysis.ipynb`  
+**Dashboard Export:** `super-store.pbix`  
+**Author:** Đào Minh Thuấn  
+**Project Type:** Python (EDA, Customer Analytics, Business Intelligence)
+
+---
 
 ## 🧭 Project Overview
 
-* This project analyzes a **retail Superstore dataset** containing transaction-level sales data across products, customers, and geographic regions.
-* The analysis focuses on **sales performance, profitability, customer behavior, and retention**, using both descriptive analytics and customer-centric models.
-* Advanced analytics techniques such as **RFM Segmentation, Cohort Analysis, Pareto (80/20) Analysis, and QoQ Growth Analysis** are applied.
-* Interactive and static visualizations are used to support **data-driven business decisions**.
+This project analyzes a **retail Superstore dataset** at the transaction level to uncover insights into **sales performance, profitability, and customer behavior**.
 
-Dataset original: *Sample - Superstore.csv* 
+The analysis combines **descriptive analytics and customer-centric modeling**, including segmentation, retention analysis, and value-based evaluation.
 
-**Goal:**
+Key analytical techniques include:
 
-* Exploratory Data Analysis (EDA).
-* Customer segmentation and value analysis.
-* Retention & churn analysis.
-* Business insight generation for sales and marketing strategy.
+* **Exploratory Data Analysis (EDA)**
+* **RFM Segmentation**
+* **Cohort Analysis (Retention & Churn)**
+* **Pareto (80/20) Analysis**
+* **Quarter-over-Quarter (QoQ) Growth Analysis**
+* **Customer Segmentation using K-Means**
+
+The goal is to generate **actionable insights** that support decision-making in **sales strategy, customer retention, and profitability optimization**.
+
+---
+
+## 🎯 Objectives
+
+* Analyze sales and profit distribution across products and regions.
+* Segment customers based on purchasing behavior.
+* Evaluate customer retention and churn patterns.
+* Identify high-value customers and revenue drivers.
+* Support business decisions with data-driven insights.
+
+---
 
 ## 📂 Dataset Information
 
-**Size:** 9,994 transaction records
-**Features:** 20 variables
-**Granularity:** Order line-item level
-**Target:** ***Unsupervised*** (no predefined labels)
+* **Size:** 9,994 transaction records
+* **Features:** 20 columns
+* **Granularity:** Order line-item level
+* **Target:** Unsupervised (no predefined labels)
+
+---
 
 ## 🔑 Key Features
 
-* **Order & Time**
+### Order & Time
 
-  * `OrderID`, `OrderDate`, `ShipDate`, `ShipMode`
-* **Customer**
+* `OrderID`, `OrderDate`, `ShipDate`, `ShipMode`
 
-  * `CustomerID`, `CustomerName`, `Segment`
-* **Geography**
+### Customer
 
-  * `Country`, `Region`, `State`, `City`, `PostalCode`
-* **Product**
+* `CustomerID`, `CustomerName`, `Segment`
 
-  * `ProductID`, `Category`, `Sub-Category`, `ProductName`
-* **Business Metrics**
+### Geography
 
-  * `Sales`, `Quantity`, `Discount`, `Profit`
+* `Country`, `Region`, `State`, `City`, `PostalCode`
 
-## 🧪 Data Quality Summary
+### Product
 
-* **Missing Values:** None detected → dataset is complete.
-* **Duplicates:** Only 1 duplicated row (~0.01%) → negligible impact.
-* **Outliers:** Present in Sales, Quantity, Discount, and Profit.
+* `ProductID`, `Category`, `Sub-Category`, `ProductName`
 
-  * These are **business-driven outliers** (large orders, bulk purchases, aggressive discounts), not data errors.
+### Business Metrics
 
-👉 Dataset is suitable for **EDA, segmentation, and modeling without heavy cleaning**.
+* `Sales`, `Quantity`, `Discount`, `Profit`
 
-## 🎯 Analysis & Key Outputs
+---
 
-### 📊 Exploratory Data Analysis (EDA)
+## 🧪 Data Quality Assessment
 
-* Strong **right-skewness** in all numerical features (Sales, Profit, Quantity, Discount).
-* Sales and profit are dominated by a **small number of large transactions**.
-* Office Supplies and Consumer segment account for the majority of transactions.
-* Sales are geographically concentrated in **large states and metropolitan cities**.
+* **Missing Values:** None detected
+* **Duplicates:** 1 duplicated record (~0.01%) → negligible impact
+* **Outliers:** Present in `Sales`, `Quantity`, `Discount`, `Profit`
+
+👉 These outliers are **business-driven** (bulk orders, high discounts), not data errors.
+
+Dataset is suitable for **analysis without heavy preprocessing**.
+
+---
+
+## 📊 Analysis & Key Outputs
+
+### 🔎 Sales Overview
+
+![Overview](https://iili.io/qtP4yJ9.png)
+
+* High-level KPIs: **Sales, Profit, Orders**
+* Breakdown by **Region, Category, and Time**
+* Identifies top-performing segments and trends
+
+---
 
 ### 🧠 RFM Customer Segmentation
 
-* Customers are segmented using **Recency – Frequency – Monetary (RFM)** scoring.
-* Segments include:
+![RFM Analysis](https://iili.io/qtPXViG.png)
 
-  * Champions
-  * Loyal
-  * Potential Loyalist
-  * At Risk
-  * Hibernating
-  * Lost Customers
+* Segments customers based on:
 
-**Key Insight:**
+  * **Recency (R)**
+  * **Frequency (F)**
+  * **Monetary (M)**
+* Identifies key groups:
 
-* ~**80% of total sales, profit, and volume come from only 4 RFM segments**.
-* **At Risk customers generate very high profit but face churn risk** → top retention priority.
+  * **Champions**
+  * **Loyal Customers**
+  * **At Risk**
+  * **Hibernating**
+* Supports targeted **retention and marketing strategies**
 
-### 📈 Pareto (80/20) Analysis
+---
 
-* Confirms strong **value concentration**:
+### 🔄 Cohort Analysis (Retention)
 
-  * A small subset of customer segments drives the majority of revenue and profit.
-* Segment size ≠ profitability.
-* Some large segments generate low or even negative profit.
+![Cohort Analysis](https://iili.io/qtiHNbR.png)
 
-### 🔄 Cohort Analysis (Retention & Churn)
+![Retention Rate](https://iili.io/qtiH4Js.png)
 
-* Monthly cohort tracking based on first purchase date.
-* Findings:
+* Tracks customer retention based on **first purchase month**
+* Measures **retention rate over time (Month Offset)**
+* Highlights **early churn behavior**
+* Enables evaluation of customer lifecycle performance
 
-  * **Churn is front-loaded** (early periods).
-  * Customers who survive early months tend to stay long-term.
-  * Early cohorts show stronger retention than later cohorts.
-
-**Business Implication:**
-
-* Early-stage engagement (first 3–6 months) is critical.
+---
 
 ### 📉 QoQ (Quarter-over-Quarter) Analysis
 
-* Quarterly trends analyzed for:
+![QoQ Analysis](https://iili.io/qtihMNI.png)
+
+* Analyzes **quarterly trends** in:
 
   * Sales
-  * Quantity
-  * Discount
   * Profit
-  * Customer Spend
+  * Order volume
+* Calculates **QoQ growth rates**
 * Identifies:
 
-  * Growth cycles
-  * Seasonal volatility
-  * Sharp contractions followed by recovery phases
+  * Growth periods
+  * Seasonal patterns
+  * Performance fluctuations
 
-## 🧠 Business Insights (Executive Summary)
+---
 
-* Sales and profit are **highly skewed** → focus on high-value customers and transactions.
-* **At Risk & Champions** are the most valuable segments → prioritize retention.
-* Discount strategy has a **direct impact on profitability**.
-* Customer retention drops early → improve onboarding & early engagement.
-* Geographic concentration suggests opportunities for **regional optimization**.
+### 💰 Customer Value Analysis (CLV Proxy)
+
+![CLV Analysis](https://iili.io/qtiS5oQ.png)
+
+* Estimates **customer value using aggregated revenue** (proxy for CLV)
+* Segments customers into:
+
+  * Low-value
+  * Medium-value
+  * High-value
+* Highlights **top revenue-contributing customers**
+
+⚠️ Note:
+This is a **descriptive CLV proxy**, not a predictive CLV model.
+
+---
+
+### 🤖 Customer Segmentation (K-Means)
+
+![KMean](https://iili.io/qtsRgLB.png)
+
+* Applies **K-Means clustering** on customer features
+* Groups customers based on:
+
+  * Purchase behavior
+  * Spending patterns
+* Supports **unsupervised segmentation beyond RFM**
+
+---
+
+### 👤 Customer Profiling
+
+![Profiling](https://iili.io/qtsRe5b.png)
+
+![Profiling2](https://iili.io/qtsRSzQ.png)
+
+* Profiles customer segments based on:
+
+  * Demographics (Region, Segment)
+  * Purchase patterns
+* Provides business-friendly interpretation of clusters
+
+---
+
+## 🧠 Business Insights
+
+* Sales and profit distribution are **highly skewed** → a small group of customers drives most revenue.
+* **High-value segments (Champions, Loyal)** contribute disproportionately → prioritize retention.
+* Heavy discounts often **reduce profitability**, especially in certain categories.
+* Customer retention shows **early drop-off** → onboarding and early engagement are critical.
+* Regional differences indicate **opportunities for localized strategy optimization**.
+
+---
 
 ## 🚀 Future Improvements
 
-* Build **regression models** to predict Sales or Profit.
-* Apply **clustering (KMeans + PCA)** for advanced customer segmentation.
+* Build **predictive models** for Sales or Profit.
+* Develop **true CLV prediction models** (e.g., BG/NBD, Gamma-Gamma).
+* Optimize **K-Means clustering** (feature scaling, silhouette score).
 * Integrate **interactive dashboards** (Power BI / Plotly Dash).
-* Evaluate **CLV prediction models**.
+* Implement **customer churn prediction models**.
+
+---
 
 ## 👤 Author
 
 **Name:** Đào Minh Thuấn
-**GitHub:** [daominhthuan42](https://github.com/daominhthuan42)
+**GitHub:** [https://github.com/daominhthuan42](https://github.com/daominhthuan42)

@@ -1,74 +1,147 @@
-# 🛒 E-commerce Orders 🔍
+# 🛒 E-commerce Orders Analytics 🔍
 
-**Notebook:** `ecommerce-orders-10k-updated.ipynb` <br>
-**Dashboard Export:** `ecommerce-orders-10k-updated.pbix` <br>
-**Author:** Đào Minh Thuấn <br>
-**Project Type:** Power BI + Python
+**Notebook:** `ecommerce-orders-10k-updated.ipynb`
+**Dashboard:** `ecommerce-orders-10k-updated.pbix`
+**Author:** Đào Minh Thuấn
+**Project Type:** Data Analytics (Python + Power BI)
+
+---
 
 ## 🧭 Project Overview
 
-* The dataset contains **transaction-level information**: order_id, user_id, product_id, category, price, quantity, total_price, order_date, country, and customer_segment.
-* It enables analysis of **shopping behaviors** based on product categories, spending levels, and customer segments.
-* Key variables such as **total_price**, **category**, **customer_segment**, and **country** support revenue analysis, RFM segmentation, and customer profiling.
-* The dataset is suitable for **Customer Segmentation**.
+This project analyzes an e-commerce transaction dataset to uncover insights into customer behavior, revenue performance, and long-term customer value.
 
-Dataset original: [E-commerce Orders Dataset](https://github.com/elizabethwanjiku703/Youtube/blob/main/Tutorial%2010/ecommerce_orders_10k_updated.csv)
+The dataset contains **transaction-level data**, including:
 
-**Goal:**
+* Orders: `order_id`, `price`, `quantity`, `total_price`, `order_date`
+* Customers: `user_id`, `country`, `customer_segment`
+* Products: `product_id`, `category`
 
-* Data analytics (segmentation, cohort analysis).
-* Customer value modeling (RFM, CLV).
-* Data visualization with Power BI.
+**total_price (GMV)** represents the total revenue per transaction.
+
+The project supports:
+
+* Revenue analysis
+* Customer segmentation
+* Retention and cohort analysis
+* Customer lifetime value modeling
+
+**Dataset:**
+[E-commerce Orders Dataset](https://github.com/elizabethwanjiku703/Youtube/blob/main/Tutorial%2010/ecommerce_orders_10k_updated.csv)
+
+---
 
 ## 📂 Dataset Information
 
-**Size:** 10000 transactions, 10 features.
-**Target:** ***Unsupervised*** (no fraud labels provided).
+* **Size:** 10,000 transactions
+* **Features:** 10 columns
+* **Type:** Unsupervised analysis (no labels provided)
 
-### 🔑 Key Features
+---
 
-* **Order:** `order_id`, `price`, `qty`, `total_price`, `order_date`.
-* **Account:** `user_id`, `country`.
-* **Product:** `product_id`, `category`.
+## 🎯 Project Scope
 
-## 🎯 Objectives
+* Customer segmentation (RFM)
+* Cohort and retention analysis
+* Customer Lifetime Value (CLV)
+* Sales and growth performance analytics
+* Time series analysis
 
-### Overview
+---
 
-![Overview](https://iili.io/fnOpcZP.png)
+## ⚙️ Tech Stack
 
-* This is an **e-commerce orders dashboard**, summarizing key metrics such as total sales, quantity sold, number of orders, and average order value, with year-over-year comparison and filters by country and year.
-* It visualizes **sales distribution by category, month, customer segment, quarter, and country**, including a map and Top-5 countries table.
-* The dashboard helps identify **high-performing categories, regions, and customer segments**, supporting decisions on marketing, inventory planning, and overall sales strategy.
+* **Python:** data preprocessing, feature engineering
+* **Power BI:** data modeling & dashboard visualization
+* **DAX:** KPI calculations and business metrics
 
-### xTD Performance
+---
 
-![xTD Performance](https://iili.io/fneKiDG.png)
+## 🧱 Data Model
 
-* This page presents the **x-to-Date (MTD / QTD / YTD) e-commerce orders performance**, including key metrics such as **Sales, Quantity Sold, Orders, and Average Order Value**, all benchmarked against the prior year.
-* It provides insights into **monthly sales trends vs last year**, **Top 20 customers by xTD sales**, **country-level performance**, and **customer-segment contribution** in both sales and AOV.
-* It supports monitoring **xTD growth** and evaluating the effectiveness of **customer segments and key markets (countries)** to guide targeting, retention, and marketing decisions.
+* Star schema design:
 
-### RFM
+  * **Fact table:** Orders (transactions)
+  * **Dimension tables:** Customers, Products, Date
 
-![RFM](https://iili.io/fneTLkQ.png)
+---
 
-* This page presents the **customer analysis based on the RFM model** (Recency – Frequency – Monetary) along with average RFM metrics.
-* Customers are segmented (Champions, Loyal, At Risk, Hibernating, etc.) using a **Treemap**, and their revenue contribution is evaluated through a **Pareto Analysis**.
-* It helps identify **high-value customers**, those needing attention, and those at risk of churn to support targeted strategies.
+## 📊 Dashboard Pages
 
-### Cohort
+### 1. Overview
 
-![Cohort](https://iili.io/fne7EiP.png)
+![Overview](https://iili.io/qtOOSHb.png)
 
-* This page shows a **Cohort Retention Analysis**, tracking the number and percentage of customers retained each month after their first transaction.
-* It highlights **early churn patterns**, the gradual decline in retention over time, and differences across cohorts.
-* It helps evaluate **customer retention performance** and identify segments that require improvement or additional engagement.
+* Provides a high-level view of **total revenue, orders, quantity, and AOV** with YoY comparison.
+* Visualizes sales distribution by **category, country, segment, and time**.
+* Supports identification of top-performing regions and product categories.
 
-### CLV & QoQ
+---
 
-![CLV & QoQ](https://iili.io/fnecaOG.png)
+### 2. RFM Analysis
 
-* This page provides a **quarterly analysis** of transaction amount, revenue, and customer count, including **Quarter-over-Quarter (QoQ) growth trends**.
-* It shows the **distribution of Customer Lifetime Value (CLV)** and the breakdown of **CLV segments** (Low, Medium, High value).
-* Highlights the **top customers by CLV**, helping identify the most valuable long-term contributors.
+![RFM](https://iili.io/qLgqd0X.png)
+
+* Segments customers using the **RFM model (Recency, Frequency, Monetary)**.
+* Groups include **Champions, Loyal, At Risk, Hibernating**, etc.
+* Includes **Pareto analysis** to evaluate revenue contribution.
+* Helps prioritize retention and re-engagement strategies.
+
+---
+
+### 3. Cohort Analysis
+
+![Cohort](https://iili.io/qLgAR6v.png)
+![Retention Rate](https://iili.io/qLg1wSs.png)
+
+* Tracks **customer retention over time** based on first purchase month.
+* Highlights **churn patterns and retention decay**.
+* Enables evaluation of long-term customer engagement.
+
+---
+
+### 4. CLV Analysis
+
+![CLV](https://iili.io/qtOZ2Bn.png)
+
+* Analyzes **Customer Lifetime Value (CLV)** along with:
+
+  * Average Order Value (AOV)
+  * Purchase Frequency
+* Identifies **high-value customers** and revenue drivers.
+* Supports strategies for **retention, upselling, and customer growth**.
+
+---
+
+### 5. QoQ Growth Analysis
+
+![QoQ](https://iili.io/qte9pWl.png)
+
+* Visualizes **quarter-over-quarter (QoQ) sales/quantity/orders trends** by category.
+* Highlights **growth patterns, seasonality, and volatility**.
+* Helps identify **high-growth and declining categories**.
+
+---
+
+### 6. Time Series Analysis
+
+![Timeseries](https://iili.io/qL4TQ72.png)
+
+* Tracks **daily revenue (GMV)** with moving averages:
+
+  * 7-day, 14-day, 30-day
+* Reduces noise to reveal **underlying trends and anomalies**.
+* Supports **short-term monitoring and forecasting decisions**.
+
+---
+
+## 👤 Author
+
+* **Name:** Đào Minh Thuấn
+* **GitHub:** [https://github.com/daominhthuan42](https://github.com/daominhthuan42)
+
+---
+
+## ✅ Summary
+
+This project transforms raw transactional data into actionable insights by combining **customer analytics, revenue modeling, and interactive dashboards**, enabling a shift from **transaction-based reporting to customer-centric decision-making**.

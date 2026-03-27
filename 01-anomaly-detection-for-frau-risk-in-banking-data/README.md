@@ -1,110 +1,172 @@
 # 🏦 Anomaly Detection for Fraud Risk in Banking Data 🛡️
 
-**Notebook:** `Bank_Transactions.ipynb` <br>
-**Dashboard Export:** `final_project.pbix` <br>
-**Author:** Đào Minh Thuấn <br>
-**Project Type:** Power BI + Python
+**Notebook:** `anomaly-detection-for-frau-risk-in-banking-data.ipynb`  
+**Dashboard Export:** `anomaly-detection-for-frau-risk-in-banking-data.pbix`  
+**Author:** Đào Minh Thuấn  
+**Project Type:** Power BI + Python  
+
+---
 
 ## 🧭 Project Overview
 
-Fraud detection is a critical challenge in banking, but real datasets are often **unlabeled** due to privacy and data scarcity.
-This project analyzes a **synthetic bank transaction dataset** and applies **unsupervised anomaly detection & clustering** to identify potentially fraudulent transactions.
+Fraud detection is a critical challenge in banking, where real-world datasets are often **unlabeled** due to privacy constraints and limited accessibility.
 
-Dataset original: [Bank Transaction Dataset for Fraud Detection (Kaggle)](https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection)
+This project analyzes a **synthetic bank transaction dataset** and applies **unsupervised learning techniques** to identify potentially fraudulent activities.
 
-Dataset clean (fake data): [Bank Transaction Dataset for Fraud Detection — Synthetic Data Generated with ChatGPT](https://github.com/daominhthuan42/datapot-data-analytics-bootcamp/blob/main/01_PL300-149/final-project/bank_transactions_data_2_augmented_clean_2.csv)
+Dataset original:
+[https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection](https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection)
 
-**Goal:**
+Dataset (cleaned & synthetic version):
+[https://www.kaggle.com/datasets/thuandao/bank-transactions-dataset-for-fraud-detection](https://www.kaggle.com/datasets/thuandao/bank-transactions-dataset-for-fraud-detection)
 
-* Explore transaction patterns and anomalies.
-* Apply unsupervised models (Clustering + Isolation Forest) to detect suspicious activities.
-* Provide insights for **fraud risk management**.
+### 🎯 Objectives
 
-It combines:
+* Explore transaction behavior and detect anomalies.
+* Apply **unsupervised models** (Clustering + Isolation Forest).
+* Analyze customer value using **RFM and CLV models**.
+* Provide actionable insights for **fraud risk management and business optimization**.
 
-* Data analytics (segmentation, cohort analysis).
-* Customer value modeling (RFM, CLV).
-* Fraud detection using anomaly analysis.
-* Data visualization with Power BI.
+### 🧠 Approach
+
+This project combines:
+
+* **Behavioral segmentation** (RFM Analysis)
+* **Customer value modeling** (CLV)
+* **Unsupervised anomaly detection** (Isolation Forest, Clustering)
+* **Time-based analysis** (Cohort, QoQ)
+* **Data visualization** using Power BI
+
+---
 
 ## 📂 Dataset Information
 
-**Size:** 50000 transactions, 15 features.
-**Target:** ***Unsupervised*** (no fraud labels provided).
+* **Size:** 50,000 transactions
+* **Features:** 15 columns
+* **Target:** Unsupervised (no fraud labels)
 
 ### 🔑 Key Features
 
-* **Transaction:** `TransactionID`, `TransactionAmount`, `TransactionDate`, `TransactionDuration`.
-* **Account:** `AccountID`, `AccountBalance`.
-* **Customer Info:** `CustomerAge`, `CustomerOccupation`.
-* **Channel & Devices:** `Channel`, `DeviceID`, `IP Address`, `Location`, `MerchantID`.
-* **Security:** `LoginAttempts`.
+**Transaction Data**
 
-## 🎯 Objectives
+* `TransactionID`, `TransactionAmount`, `TransactionDate`, `TransactionDuration`
 
-### Overview
+**Account Information**
 
-![Overview](https://iili.io/fJxfmep.png)
+* `AccountID`, `AccountBalance`
 
-* This is a **banking transaction overview dashboard**, showing key metrics such as total amount, total transactions, total customers, and average transaction value.
-* It provides insights into **monthly trends, merchant performance, city distribution, transaction channels, and transaction types**.
-* It helps identify **high-contribution locations, merchants, and channels**, supporting monitoring and business decision-making.
+**Customer Attributes**
 
-### xTD Performance
+* `CustomerAge`, `CustomerOccupation`
 
-![xTD Performance](https://iili.io/fJxoKnS.png)
+**Channel & Device**
 
-* This page presents the **x-to-Date (with x: MTD, YTD and QTD) transaction performance**, including key metrics such as Amount, Transactions, Average Transaction Value, and Average Customer Value compared to last year.
-* It provides insights into **monthly trends**, **top-contributing customers**, **high-performing devices**, and **city-level growth**.
-* It supports monitoring **xTD growth** and evaluating the effectiveness of customers, devices, and transaction channels.
+* `Channel`, `DeviceID`, `IP Address`, `Location`, `MerchantID`
 
-### RFM
+**Security**
 
-![RFM](https://iili.io/fJxurFI.png)
+* `LoginAttempts`
 
-* This page presents the **customer analysis based on the RFM model** (Recency – Frequency – Monetary) along with average RFM metrics.
-* Customers are segmented (Champions, Loyal, At Risk, Hibernating, etc.) using a **Treemap**, and their revenue contribution is evaluated through a **Pareto Analysis**.
-* It helps identify **high-value customers**, those needing attention, and those at risk of churn to support targeted strategies.
+---
 
-### Cohort
+## 📊 Dashboard Overview
 
-![Cohort](https://iili.io/fJx553N.png)
+### 🔎 Overview
 
-* This page shows a **Cohort Retention Analysis**, tracking the number and percentage of customers retained each month after their first transaction.
-* It highlights **early churn patterns**, the gradual decline in retention over time, and differences across cohorts.
-* It helps evaluate **customer retention performance** and identify segments that require improvement or additional engagement.
+![Overview](https://iili.io/qte84HX.png)
 
-### CLV & QoQ
+* Provides a high-level summary of key metrics: **total transaction amount, total transactions, total customers, and average transaction value**.
+* Displays **monthly trends**, **merchant performance**, **channel distribution**, and **geographic insights**.
+* Helps identify **top-performing segments and operational patterns**.
 
-![CLV & QoQ](https://iili.io/fJxYXp9.png)
+---
 
-* This page provides a **quarterly analysis** of transaction amount, revenue, and customer count, including **Quarter-over-Quarter (QoQ) growth trends**.
-* It shows the **distribution of Customer Lifetime Value (CLV)** and the breakdown of **CLV segments** (Low, Medium, High value).
-* Highlights the **top customers by CLV**, helping identify the most valuable long-term contributors.
+### 👥 RFM Analysis
 
-### Anomalies Analysis
+![RFM](https://iili.io/qteZnDB.png)
 
-![Anomalies Analysis](https://iili.io/fJxcpXn.png)
+* Segments customers based on **Recency, Frequency, and Monetary (RFM)** metrics.
+* Uses **Treemap visualization** to classify groups such as *Champions, Loyal, At Risk, Hibernating*.
+* Includes **Pareto analysis** to evaluate revenue contribution.
+* Supports targeted strategies for **retention and engagement**.
 
-* This page visualizes **fraud detection results** using the Isolation Forest model, showing the separation between **normal transactions and potential frauds** on a PCA 2D plot.
-* The anomaly score distribution highlights the **threshold** and distinguishes the **fraud zone vs. normal zone**.
-* A detailed table lists **flagged suspicious transactions**, including customer info, transaction details, and segment classification.
+---
 
-### Advanced Analysis
+### 📅 Cohort Analysis
 
-![Advanced Analysis](https://iili.io/fJx1kJ4.png)
+![Cohort](https://iili.io/qtkHyDG.png)
 
-* This page analyzes **fraud patterns** by comparing normal vs. potential fraud transactions across multiple dimensions.
-* It examines differences in **transaction amount, channel, transaction type, customer age, occupation, account balance, and duration**.
-* The geographic map highlights **where potential frauds are concentrated**.
+* Tracks **customer retention over time** based on first transaction month.
+* Highlights **early churn patterns** and retention decay.
+* Enables evaluation of **customer lifecycle performance** across cohorts.
 
-### Anomaly Trends
+---
 
-![Anomaly Trends](https://iili.io/fJxGktS.png)
+### 📊 QoQ Analysis
 
-* This page shows the **monthly trend of average transaction amount** for normal vs. potential fraud transactions.
-* It highlights a clear difference, with **potential frauds consistently having higher transaction values** than normal transactions.
-* Helps monitor how the anomaly pattern changes across months.
+![QoQ Analysis](https://iili.io/qtkBfwP.png)
+
+* Focuses on **Quarter-over-Quarter (QoQ) performance trends**.
+* Tracks key KPIs: **transaction amount, revenue, and customer count** across quarters.
+* Includes **QoQ growth rates** to identify acceleration or slowdown in business performance.
+* Helps assess **short-term business momentum** and detect seasonal patterns or anomalies.
+
+---
+
+### 💰 CLV Analysis
+
+![CLV Analysis](https://iili.io/qtk1sLu.png)
+
+* Focuses on **Customer Lifetime Value (CLV)** to measure long-term customer profitability.
+* Shows **CLV distribution** and segments customers into **Low, Medium, High-value tiers**.
+* Highlights **top customers by CLV** for prioritization.
+* Supports strategies for **customer retention, personalization, and revenue maximization**.
+
+---
+
+### 🚨 Anomalies Analysis
+
+![Anomalies Analysis](https://iili.io/qtvtGQ2.png)
+
+* Visualizes fraud detection results using **Isolation Forest**.
+* Displays separation between **normal vs. anomalous transactions** using PCA (2D projection).
+* Shows **anomaly score distribution** and threshold.
+* Includes detailed table of **flagged suspicious transactions**.
+
+* Visualizes fraud detection results using **KMean and Local Outlier Factor**.
+
+![KMean Analysis](https://iili.io/qtL5e07.png)
+
+![LOF Analysis](https://iili.io/qtL5OfS.png)
+
+---
+
+### 🔬 Advanced Analysis
+
+![Advanced Analysis](https://iili.io/qtvgDUQ.png)
+
+* Compares **normal vs. potential fraudulent transactions** across multiple dimensions:
+
+  * Transaction amount
+  * Channel & transaction type
+  * Customer demographics
+  * Account balance & duration
+* Identifies behavioral differences that may indicate fraud patterns.
+* Geographic map highlights **fraud concentration areas**.
+
+---
+
+### 📈 Anomaly Trends
+
+![Anomaly Trends](https://iili.io/qtvwW9s.png)
+
+* Tracks **monthly trends of transaction behavior** for normal vs. anomalous groups.
+* Reveals that:
+
+  * At the **transaction level**, anomalies often involve irregular patterns (e.g., duration, frequency).
+  * At the **aggregated level**, anomalies may show **higher average transaction values due to periodic spikes**.
+* Supports monitoring of **fraud pattern evolution over time**.
+
+---
 
 ## 💡 Key Insights & Recommendations
 
@@ -112,16 +174,26 @@ It combines:
 
 **Fraud Behavior Summary (Isolation Forest Results)**
 
-* **Fraud tends to involve smaller amounts but longer transaction duration.**
-* **Fraud occurs more frequently in Credit transactions and in Branch/Online channels.**
-* **Fraud is more common among older customers, with no strong occupation differences, though Retired is slightly higher.**
-* **Fraudulent accounts generally have lower balances than normal accounts.**
-* **Regional differences are minimal, with no clear separation.**
-* **Monthly trends are highly volatile, indicating periodic fraud spikes rather than steady behavior.**
+* Fraudulent transactions often exhibit **unusual patterns in duration and frequency** rather than just extreme values.
+* Higher anomaly likelihood is observed in **Credit transactions** and **Branch/Online channels**.
+* Slightly higher occurrence among **older customers**, with minimal occupation-based differences.
+* Accounts associated with anomalies tend to have **lower balances**.
+* Fraud patterns are **not strongly location-dependent**.
+* Fraud signals are **volatile over time**, indicating periodic spikes rather than stable trends.
+
+---
 
 ### 🏦 Business Recommendations
 
-* Implement **real-time monitoring rules** for repeated-pattern transactions.
-* Combine rule-based checks with **Isolation Forest** for more robust detection.
-* High-value customers with anomalies should trigger **priority manual review**.
-* Introduce targeted **retention campaigns** for cohorts with early churn.
+* Implement **real-time anomaly monitoring systems** using Isolation Forest.
+* Combine **rule-based detection** with machine learning models for robustness.
+* Prioritize **manual review for high-value customers with anomalies**.
+* Design **targeted retention campaigns** for cohorts with early churn signals.
+* Continuously monitor **QoQ performance and anomaly trends** to detect emerging risks.
+
+---
+
+## 👤 Author
+
+* **Name:** Đào Minh Thuấn
+* **GitHub:** [https://github.com/daominhthuan42](https://github.com/daominhthuan42)
