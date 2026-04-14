@@ -18,8 +18,3 @@ Thumbs.db
 # Ignore IDE-specific files
 .vscode/
 .idea/
-
-# Ignore exported data or diagrams (if applicable)
-*.csv
-*.png
-*.pdf
