@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1071bc37b41544653c8729f52ccdfd6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1071bc37b41544653c8729f52ccdfd6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1071bc37b41544653c8729f52ccdfd6 = L.map(
+                "map_f1071bc37b41544653c8729f52ccdfd6",
+                {
+                    center: [36.7014631, -118.755997],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b125fda3efb1c540f4b56515b19452a8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b125fda3efb1c540f4b56515b19452a8.addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var marker_a31fe3b4685dad2b6facdae711765283 = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_09130e1e30496d1134bf0e9c56ecfed2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a31fe3b4685dad2b6facdae711765283.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> California<br>
+            <b>Number Order:</b> 386<br>
+            <b>Total Quantity:</b> 2,569<br>
+            <b>Total Discount:</b> 54.90<br>
+            <b>GMV:</b> $240,302.39<br>
+            <b>Total Profit:</b> $41,983.89<br>
+            <b>Total Spend:</b> $198,318.51<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a31fe3b4685dad2b6facdae711765283.setIcon(icon_09130e1e30496d1134bf0e9c56ecfed2);
+            
+    
+            var marker_6acb368388d61d5768e8b91ebeb0952d = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_ce33b83b87a44be4673929daff5abe22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6acb368388d61d5768e8b91ebeb0952d.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> New York<br>
+            <b>Number Order:</b> 202<br>
+            <b>Total Quantity:</b> 1,329<br>
+            <b>Total Discount:</b> 18.00<br>
+            <b>GMV:</b> $143,787.28<br>
+            <b>Total Profit:</b> $34,399.11<br>
+            <b>Total Spend:</b> $109,388.17<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6acb368388d61d5768e8b91ebeb0952d.setIcon(icon_ce33b83b87a44be4673929daff5abe22);
+            
+    
+            var marker_efcd92ff7e65f1eea1ccb447e4cd166c = L.marker(
+                [38.8950982, -77.0363849],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_857bdc0fb8191780b20fcd3ec1755528 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_efcd92ff7e65f1eea1ccb447e4cd166c.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Washington<br>
+            <b>Number Order:</b> 99<br>
+            <b>Total Quantity:</b> 719<br>
+            <b>Total Discount:</b> 12.40<br>
+            <b>GMV:</b> $80,065.19<br>
+            <b>Total Profit:</b> $19,983.27<br>
+            <b>Total Spend:</b> $60,081.92<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efcd92ff7e65f1eea1ccb447e4cd166c.setIcon(icon_857bdc0fb8191780b20fcd3ec1755528);
+            
+    
+            var marker_65806235260b2e5a76e42439bad67497 = L.marker(
+                [31.2638905, -98.5456116],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_71b8be7b452207c5ac9634f76ca82271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_65806235260b2e5a76e42439bad67497.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Texas<br>
+            <b>Number Order:</b> 158<br>
+            <b>Total Quantity:</b> 998<br>
+            <b>Total Discount:</b> 68.32<br>
+            <b>GMV:</b> $68,591.77<br>
+            <b>Total Profit:</b> $-10,500.37<br>
+            <b>Total Spend:</b> $79,092.13<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65806235260b2e5a76e42439bad67497.setIcon(icon_71b8be7b452207c5ac9634f76ca82271);
+            
+    
+            var marker_9fdfd9c0a619be4bbfbeb2fb090b8d44 = L.marker(
+                [40.9699889, -77.7278831],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_288d5bd5591e1afda731cdf5b13eeb45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9fdfd9c0a619be4bbfbeb2fb090b8d44.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Pennsylvania<br>
+            <b>Number Order:</b> 94<br>
+            <b>Total Quantity:</b> 591<br>
+            <b>Total Discount:</b> 43.60<br>
+            <b>GMV:</b> $67,445.80<br>
+            <b>Total Profit:</b> $-8,002.10<br>
+            <b>Total Spend:</b> $75,447.90<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fdfd9c0a619be4bbfbeb2fb090b8d44.setIcon(icon_288d5bd5591e1afda731cdf5b13eeb45);
+            
+    
+            var marker_cfe880a160de576c8ae28b747628cc4f = L.marker(
+                [43.6211955, -84.6824346],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_cc3cbbf3b67687f8d7231bfebe9f88bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cfe880a160de576c8ae28b747628cc4f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Michigan<br>
+            <b>Number Order:</b> 47<br>
+            <b>Total Quantity:</b> 334<br>
+            <b>Total Discount:</b> 0.50<br>
+            <b>GMV:</b> $51,143.26<br>
+            <b>Total Profit:</b> $16,719.15<br>
+            <b>Total Spend:</b> $34,424.11<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfe880a160de576c8ae28b747628cc4f.setIcon(icon_cc3cbbf3b67687f8d7231bfebe9f88bb);
+            
+    
+            var marker_8eeb3a653c18ff3e433c4e3f4f215d5e = L.marker(
+                [40.2253569, -82.6881395],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_33a373eb808816225ea64334c903774d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8eeb3a653c18ff3e433c4e3f4f215d5e.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Ohio<br>
+            <b>Number Order:</b> 87<br>
+            <b>Total Quantity:</b> 557<br>
+            <b>Total Discount:</b> 38.90<br>
+            <b>GMV:</b> $43,535.29<br>
+            <b>Total Profit:</b> $-9,090.72<br>
+            <b>Total Spend:</b> $52,626.01<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8eeb3a653c18ff3e433c4e3f4f215d5e.setIcon(icon_33a373eb808816225ea64334c903774d);
+            
+    
+            var marker_3ea7af4b2a32fb8b6b132d53f6940a47 = L.marker(
+                [40.3270127, -86.1746933],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_ae105f17837c067a15922b6947c03302 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3ea7af4b2a32fb8b6b132d53f6940a47.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Indiana<br>
+            <b>Number Order:</b> 33<br>
+            <b>Total Quantity:</b> 237<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $42,712.79<br>
+            <b>Total Profit:</b> $15,044.09<br>
+            <b>Total Spend:</b> $27,668.70<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ea7af4b2a32fb8b6b132d53f6940a47.setIcon(icon_ae105f17837c067a15922b6947c03302);
+            
+    
+            var marker_66cd20bd0381bcfd9e6652106d4e6da8 = L.marker(
+                [40.0796606, -89.4337288],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_230899f64b9034c6f6120b47c9df22a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_66cd20bd0381bcfd9e6652106d4e6da8.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Illinois<br>
+            <b>Number Order:</b> 94<br>
+            <b>Total Quantity:</b> 475<br>
+            <b>Total Discount:</b> 40.50<br>
+            <b>GMV:</b> $37,359.46<br>
+            <b>Total Profit:</b> $-8,474.97<br>
+            <b>Total Spend:</b> $45,834.43<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66cd20bd0381bcfd9e6652106d4e6da8.setIcon(icon_230899f64b9034c6f6120b47c9df22a6);
+            
+    
+            var marker_fbdc30551fde5079e8d1399484aaebfa = L.marker(
+                [27.7567667, -81.4639835],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_2ac7841403e8a18919b50ddf0f6eb7ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fbdc30551fde5079e8d1399484aaebfa.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Florida<br>
+            <b>Number Order:</b> 66<br>
+            <b>Total Quantity:</b> 361<br>
+            <b>Total Discount:</b> 23.25<br>
+            <b>GMV:</b> $35,510.61<br>
+            <b>Total Profit:</b> $-589.45<br>
+            <b>Total Spend:</b> $36,100.06<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbdc30551fde5079e8d1399484aaebfa.setIcon(icon_2ac7841403e8a18919b50ddf0f6eb7ef);
+            
+    
+            var marker_58422b1cb805f246278f2a6b63f28ec3 = L.marker(
+                [35.6729639, -79.0392919],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_f4db7e67859109d2addfc03c2a5ff634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_58422b1cb805f246278f2a6b63f28ec3.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> North Carolina<br>
+            <b>Number Order:</b> 43<br>
+            <b>Total Quantity:</b> 298<br>
+            <b>Total Discount:</b> 17.70<br>
+            <b>GMV:</b> $33,258.70<br>
+            <b>Total Profit:</b> $-5,182.34<br>
+            <b>Total Spend:</b> $38,441.04<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58422b1cb805f246278f2a6b63f28ec3.setIcon(icon_f4db7e67859109d2addfc03c2a5ff634);
+            
+    
+            var marker_5e9b96b08427f2239d02deaf99414a01 = L.marker(
+                [32.3293809, -83.1137366],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_76b7427bba382f612ce44e6b134273a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5e9b96b08427f2239d02deaf99414a01.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Georgia<br>
+            <b>Number Order:</b> 31<br>
+            <b>Total Quantity:</b> 213<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $26,084.93<br>
+            <b>Total Profit:</b> $7,714.77<br>
+            <b>Total Spend:</b> $18,370.16<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e9b96b08427f2239d02deaf99414a01.setIcon(icon_76b7427bba382f612ce44e6b134273a4);
+            
+    
+            var marker_1e8847b84a7caa7eda9628e223899645 = L.marker(
+                [40.0757384, -74.4041622],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_2a198d74fb851a6024549c0816e06751 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1e8847b84a7caa7eda9628e223899645.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> New Jersey<br>
+            <b>Number Order:</b> 24<br>
+            <b>Total Quantity:</b> 157<br>
+            <b>Total Discount:</b> 0.30<br>
+            <b>GMV:</b> $25,550.52<br>
+            <b>Total Profit:</b> $6,686.98<br>
+            <b>Total Spend:</b> $18,863.53<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e8847b84a7caa7eda9628e223899645.setIcon(icon_2a198d74fb851a6024549c0816e06751);
+            
+    
+            var marker_dd1abd77b9594728e65d9c5d272c8583 = L.marker(
+                [37.1232245, -78.4927721],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_06c4cbb13b881d2642cdbfaa9d2ef3c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dd1abd77b9594728e65d9c5d272c8583.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Virginia<br>
+            <b>Number Order:</b> 36<br>
+            <b>Total Quantity:</b> 235<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $23,901.25<br>
+            <b>Total Profit:</b> $6,263.83<br>
+            <b>Total Spend:</b> $17,637.42<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd1abd77b9594728e65d9c5d272c8583.setIcon(icon_06c4cbb13b881d2642cdbfaa9d2ef3c9);
+            
+    
+            var marker_9b7ace177f8b6a263a4a81651540ebfe = L.marker(
+                [38.7251776, -105.607716],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_fad9cede049304c6f90a8bc58f644685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9b7ace177f8b6a263a4a81651540ebfe.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Colorado<br>
+            <b>Number Order:</b> 33<br>
+            <b>Total Quantity:</b> 235<br>
+            <b>Total Discount:</b> 16.30<br>
+            <b>GMV:</b> $19,694.07<br>
+            <b>Total Profit:</b> $-5,786.26<br>
+            <b>Total Spend:</b> $25,480.33<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b7ace177f8b6a263a4a81651540ebfe.setIcon(icon_fad9cede049304c6f90a8bc58f644685);
+            
+    
+            var marker_c6a3cfc3a09f288e78a5e95cdfa14718 = L.marker(
+                [37.5726028, -85.1551411],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_0274bdf49b343474559cf86e90129a83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c6a3cfc3a09f288e78a5e95cdfa14718.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Kentucky<br>
+            <b>Number Order:</b> 25<br>
+            <b>Total Quantity:</b> 168<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $18,674.79<br>
+            <b>Total Profit:</b> $5,419.40<br>
+            <b>Total Spend:</b> $13,255.39<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6a3cfc3a09f288e78a5e95cdfa14718.setIcon(icon_0274bdf49b343474559cf86e90129a83);
+            
+    
+            var marker_2dfb6555ad7a22ea4331d3e08e9e7080 = L.marker(
+                [35.7730076, -86.2820081],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_fd9155b4e2dbddfc621dc1144410a442 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2dfb6555ad7a22ea4331d3e08e9e7080.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Tennessee<br>
+            <b>Number Order:</b> 33<br>
+            <b>Total Quantity:</b> 225<br>
+            <b>Total Discount:</b> 12.60<br>
+            <b>GMV:</b> $16,706.10<br>
+            <b>Total Profit:</b> $-3,494.26<br>
+            <b>Total Spend:</b> $20,200.36<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dfb6555ad7a22ea4331d3e08e9e7080.setIcon(icon_fd9155b4e2dbddfc621dc1144410a442);
+            
+    
+            var marker_df0a9399c59cfa1d8e8f02283f1dbd64 = L.marker(
+                [41.7962409, -71.5992372],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_9b755d26c20989a4e05511f0c548202c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_df0a9399c59cfa1d8e8f02283f1dbd64.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Rhode Island<br>
+            <b>Number Order:</b> 11<br>
+            <b>Total Quantity:</b> 78<br>
+            <b>Total Discount:</b> 0.60<br>
+            <b>GMV:</b> $15,914.36<br>
+            <b>Total Profit:</b> $5,391.34<br>
+            <b>Total Spend:</b> $10,523.02<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df0a9399c59cfa1d8e8f02283f1dbd64.setIcon(icon_9b755d26c20989a4e05511f0c548202c);
+            
+    
+            var marker_01b370ac78baeafeac0cf730ea37e3d1 = L.marker(
+                [44.4308975, -89.6884637],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_fdf77b4d266ef2997af20b8509fa4d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_01b370ac78baeafeac0cf730ea37e3d1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Wisconsin<br>
+            <b>Number Order:</b> 18<br>
+            <b>Total Quantity:</b> 173<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $15,758.58<br>
+            <b>Total Profit:</b> $4,271.08<br>
+            <b>Total Spend:</b> $11,487.50<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01b370ac78baeafeac0cf730ea37e3d1.setIcon(icon_fdf77b4d266ef2997af20b8509fa4d1e);
+            
+    
+            var marker_a4741eec942183ab035496a926e115f3 = L.marker(
+                [38.6920451, -75.4013315],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_a228ebfab6bf857dd508248975d42c73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a4741eec942183ab035496a926e115f3.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Delaware<br>
+            <b>Number Order:</b> 14<br>
+            <b>Total Quantity:</b> 100<br>
+            <b>Total Discount:</b> 0.30<br>
+            <b>GMV:</b> $14,797.52<br>
+            <b>Total Profit:</b> $6,381.41<br>
+            <b>Total Spend:</b> $8,416.12<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4741eec942183ab035496a926e115f3.setIcon(icon_a228ebfab6bf857dd508248975d42c73);
+            
+    
+            var marker_ac0b36e73dc81d126346430ae55d1a3d = L.marker(
+                [34.395342, -111.763275],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_fdf3b96f5abdbcf8e42f76797ecf3fb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ac0b36e73dc81d126346430ae55d1a3d.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Arizona<br>
+            <b>Number Order:</b> 34<br>
+            <b>Total Quantity:</b> 233<br>
+            <b>Total Discount:</b> 16.40<br>
+            <b>GMV:</b> $13,466.19<br>
+            <b>Total Profit:</b> $-2,132.96<br>
+            <b>Total Spend:</b> $15,599.15<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac0b36e73dc81d126346430ae55d1a3d.setIcon(icon_fdf3b96f5abdbcf8e42f76797ecf3fb7);
+            
+    
+            var marker_7e2d8c07d9f3178eddfc1da5935f0537 = L.marker(
+                [38.7604815, -92.5617875],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_ac5f8578667482424caabf887ae00aff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7e2d8c07d9f3178eddfc1da5935f0537.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Missouri<br>
+            <b>Number Order:</b> 13<br>
+            <b>Total Quantity:</b> 95<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $12,327.51<br>
+            <b>Total Profit:</b> $2,714.41<br>
+            <b>Total Spend:</b> $9,613.10<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e2d8c07d9f3178eddfc1da5935f0537.setIcon(icon_ac5f8578667482424caabf887ae00aff);
+            
+    
+            var marker_dceecbc40436e0e5d239f8247d18298e = L.marker(
+                [39.5158825, -116.853722],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_885226037e066217bcde6d3a0bf09201 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dceecbc40436e0e5d239f8247d18298e.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Nevada<br>
+            <b>Number Order:</b> 8<br>
+            <b>Total Quantity:</b> 57<br>
+            <b>Total Discount:</b> 0.80<br>
+            <b>GMV:</b> $12,031.52<br>
+            <b>Total Profit:</b> $2,529.31<br>
+            <b>Total Spend:</b> $9,502.22<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dceecbc40436e0e5d239f8247d18298e.setIcon(icon_885226037e066217bcde6d3a0bf09201);
+            
+    
+            var marker_dfe1e8f868802f532f1af4e05b34aac3 = L.marker(
+                [42.3788774, -72.032366],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_3cad828c2d952a0e335702ef880e6e71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dfe1e8f868802f532f1af4e05b34aac3.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Massachusetts<br>
+            <b>Number Order:</b> 20<br>
+            <b>Total Quantity:</b> 128<br>
+            <b>Total Discount:</b> 1.20<br>
+            <b>GMV:</b> $10,854.33<br>
+            <b>Total Profit:</b> $2,367.97<br>
+            <b>Total Spend:</b> $8,486.36<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfe1e8f868802f532f1af4e05b34aac3.setIcon(icon_3cad828c2d952a0e335702ef880e6e71);
+            
+    
+            var marker_43814b7c02557324b17a80df640cca4d = L.marker(
+                [34.9550817, -97.2684063],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_6ede0b05dae59e1efc743d43525282c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_43814b7c02557324b17a80df640cca4d.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Oklahoma<br>
+            <b>Number Order:</b> 14<br>
+            <b>Total Quantity:</b> 83<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $10,637.41<br>
+            <b>Total Profit:</b> $2,553.06<br>
+            <b>Total Spend:</b> $8,084.35<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43814b7c02557324b17a80df640cca4d.setIcon(icon_6ede0b05dae59e1efc743d43525282c1);
+            
+    
+            var marker_da0d3e23c141f88d0090c363733a2550 = L.marker(
+                [39.5162401, -76.9382069],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_a3593c6fe8eb0bfa64f18bf45315512b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_da0d3e23c141f88d0090c363733a2550.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Maryland<br>
+            <b>Number Order:</b> 19<br>
+            <b>Total Quantity:</b> 128<br>
+            <b>Total Discount:</b> 0.30<br>
+            <b>GMV:</b> $10,435.50<br>
+            <b>Total Profit:</b> $2,885.63<br>
+            <b>Total Spend:</b> $7,549.88<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da0d3e23c141f88d0090c363733a2550.setIcon(icon_a3593c6fe8eb0bfa64f18bf45315512b);
+            
+    
+            var marker_8576036bdfa37079348177db4f790d10 = L.marker(
+                [33.2588817, -86.8295337],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_7fa838b293226ad1b77e0fbd7dd477db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8576036bdfa37079348177db4f790d10.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Alabama<br>
+            <b>Number Order:</b> 12<br>
+            <b>Total Quantity:</b> 72<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $9,020.87<br>
+            <b>Total Profit:</b> $3,144.47<br>
+            <b>Total Spend:</b> $5,876.40<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8576036bdfa37079348177db4f790d10.setIcon(icon_7fa838b293226ad1b77e0fbd7dd477db);
+            
+    
+            var marker_2c90ee6c3748128d4366a237c668e83f = L.marker(
+                [41.6500201, -72.7342163],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_2ccd5b3d4d7eb0f0daebeaf92a8177f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2c90ee6c3748128d4366a237c668e83f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Connecticut<br>
+            <b>Number Order:</b> 16<br>
+            <b>Total Quantity:</b> 100<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $8,194.35<br>
+            <b>Total Profit:</b> $1,979.25<br>
+            <b>Total Spend:</b> $6,215.10<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c90ee6c3748128d4366a237c668e83f.setIcon(icon_2ccd5b3d4d7eb0f0daebeaf92a8177f7);
+            
+    
+            var marker_4fd9cdb332c6739456f533c0a5cac270 = L.marker(
+                [45.9896587, -94.6113288],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_ab5ce073b44b089d1827a2f629e61dee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4fd9cdb332c6739456f533c0a5cac270.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Minnesota<br>
+            <b>Number Order:</b> 16<br>
+            <b>Total Quantity:</b> 79<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $7,704.81<br>
+            <b>Total Profit:</b> $2,640.94<br>
+            <b>Total Spend:</b> $5,063.87<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fd9cdb332c6739456f533c0a5cac270.setIcon(icon_ab5ce073b44b089d1827a2f629e61dee);
+            
+    
+            var marker_9dd3a15985a115e6e0f396f4b8facf76 = L.marker(
+                [32.9715285, -89.7348497],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_ab0d911493743a89e00bf5e815ed6de0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9dd3a15985a115e6e0f396f4b8facf76.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Mississippi<br>
+            <b>Number Order:</b> 13<br>
+            <b>Total Quantity:</b> 103<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $7,388.30<br>
+            <b>Total Profit:</b> $2,115.25<br>
+            <b>Total Spend:</b> $5,273.05<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dd3a15985a115e6e0f396f4b8facf76.setIcon(icon_ab0d911493743a89e00bf5e815ed6de0);
+            
+    
+            var marker_74cfd574cc0d478289bdcd328c3e6cf9 = L.marker(
+                [43.9792797, -120.737257],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_16152e2b7d5e3c1aea891bcbe5235d16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_74cfd574cc0d478289bdcd328c3e6cf9.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Oregon<br>
+            <b>Number Order:</b> 19<br>
+            <b>Total Quantity:</b> 127<br>
+            <b>Total Discount:</b> 9.50<br>
+            <b>GMV:</b> $7,219.51<br>
+            <b>Total Profit:</b> $-981.15<br>
+            <b>Total Spend:</b> $8,200.66<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74cfd574cc0d478289bdcd328c3e6cf9.setIcon(icon_16152e2b7d5e3c1aea891bcbe5235d16);
+            
+    
+            var marker_50cfe826e499fe5560fce4a24dcf0d65 = L.marker(
+                [41.7370229, -99.5873816],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_52ce945c2052f108affa788024f63435 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_50cfe826e499fe5560fce4a24dcf0d65.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Nebraska<br>
+            <b>Number Order:</b> 6<br>
+            <b>Total Quantity:</b> 47<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $6,172.35<br>
+            <b>Total Profit:</b> $1,598.75<br>
+            <b>Total Spend:</b> $4,573.60<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50cfe826e499fe5560fce4a24dcf0d65.setIcon(icon_52ce945c2052f108affa788024f63435);
+            
+    
+            var marker_76d955e1fe81ca2d062d885fab451802 = L.marker(
+                [30.8703881, -92.007126],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_96fcf9c3d7f5d75e49bdf7b70e5d8a41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_76d955e1fe81ca2d062d885fab451802.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Louisiana<br>
+            <b>Number Order:</b> 10<br>
+            <b>Total Quantity:</b> 46<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $5,640.56<br>
+            <b>Total Profit:</b> $1,251.87<br>
+            <b>Total Spend:</b> $4,388.69<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76d955e1fe81ca2d062d885fab451802.setIcon(icon_96fcf9c3d7f5d75e49bdf7b70e5d8a41);
+            
+    
+            var marker_a4e8acc812c0f263bc5f21f21837dd08 = L.marker(
+                [35.2048883, -92.4479108],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_139c5dbe35d8f95dab4f55dfeb407725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a4e8acc812c0f263bc5f21f21837dd08.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Arkansas<br>
+            <b>Number Order:</b> 11<br>
+            <b>Total Quantity:</b> 77<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $4,260.08<br>
+            <b>Total Profit:</b> $1,581.17<br>
+            <b>Total Spend:</b> $2,678.91<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4e8acc812c0f263bc5f21f21837dd08.setIcon(icon_139c5dbe35d8f95dab4f55dfeb407725);
+            
+    
+            var marker_c95922a16a5364946a4e41cc79d6cbf1 = L.marker(
+                [47.3752671, -109.638757],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_857c64ae3329932185e07966bda75fd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c95922a16a5364946a4e41cc79d6cbf1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Montana<br>
+            <b>Number Order:</b> 1<br>
+            <b>Total Quantity:</b> 8<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $4,125.97<br>
+            <b>Total Profit:</b> $1,436.28<br>
+            <b>Total Spend:</b> $2,689.69<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c95922a16a5364946a4e41cc79d6cbf1.setIcon(icon_857c64ae3329932185e07966bda75fd3);
+            
+    
+            var marker_3dd584810ccece968c53fb2f7f44f656 = L.marker(
+                [39.4225192, -111.714358],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_7a2f8c9ef06892fabc7b98a86cb4aa52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3dd584810ccece968c53fb2f7f44f656.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Utah<br>
+            <b>Number Order:</b> 7<br>
+            <b>Total Quantity:</b> 55<br>
+            <b>Total Discount:</b> 0.80<br>
+            <b>GMV:</b> $3,947.49<br>
+            <b>Total Profit:</b> $933.53<br>
+            <b>Total Spend:</b> $3,013.97<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dd584810ccece968c53fb2f7f44f656.setIcon(icon_7a2f8c9ef06892fabc7b98a86cb4aa52);
+            
+    
+            var marker_16eaba98877d3d807891f4c31da893b1 = L.marker(
+                [34.5802074, -105.996047],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_1f775cc2a9549b51896b6527a8881c08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_16eaba98877d3d807891f4c31da893b1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> New Mexico<br>
+            <b>Number Order:</b> 8<br>
+            <b>Total Quantity:</b> 61<br>
+            <b>Total Discount:</b> 0.60<br>
+            <b>GMV:</b> $2,594.23<br>
+            <b>Total Profit:</b> $736.68<br>
+            <b>Total Spend:</b> $1,857.54<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16eaba98877d3d807891f4c31da893b1.setIcon(icon_1f775cc2a9549b51896b6527a8881c08);
+            
+    
+            var marker_4cd01ce79fa85d38939e60eb52ef66c2 = L.marker(
+                [43.6447642, -114.015407],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_053fbb12179f5236a86a5db79a89e657 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4cd01ce79fa85d38939e60eb52ef66c2.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Idaho<br>
+            <b>Number Order:</b> 4<br>
+            <b>Total Quantity:</b> 18<br>
+            <b>Total Discount:</b> 0.20<br>
+            <b>GMV:</b> $2,225.73<br>
+            <b>Total Profit:</b> $414.70<br>
+            <b>Total Spend:</b> $1,811.03<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4cd01ce79fa85d38939e60eb52ef66c2.setIcon(icon_053fbb12179f5236a86a5db79a89e657);
+            
+    
+            var marker_55391bc7338b8c3c8f44a8e02ffc2135 = L.marker(
+                [44.5990718, -72.5002608],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_19a3a452a05a1dbc10ef76747b2a11e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_55391bc7338b8c3c8f44a8e02ffc2135.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Vermont<br>
+            <b>Number Order:</b> 3<br>
+            <b>Total Quantity:</b> 19<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $2,122.64<br>
+            <b>Total Profit:</b> $593.88<br>
+            <b>Total Spend:</b> $1,528.76<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55391bc7338b8c3c8f44a8e02ffc2135.setIcon(icon_19a3a452a05a1dbc10ef76747b2a11e9);
+            
+    
+            var marker_b2d2707388039d206e8887cc7da52051 = L.marker(
+                [33.6874388, -80.4363743],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_73ffda122bc44565fd5936967e6d34d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b2d2707388039d206e8887cc7da52051.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> South Carolina<br>
+            <b>Number Order:</b> 6<br>
+            <b>Total Quantity:</b> 44<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $1,850.09<br>
+            <b>Total Profit:</b> $345.41<br>
+            <b>Total Spend:</b> $1,504.68<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2d2707388039d206e8887cc7da52051.setIcon(icon_73ffda122bc44565fd5936967e6d34d6);
+            
+    
+            var marker_6fe864a8f72c60cc1bc3130637c4e6dc = L.marker(
+                [43.1700264, -107.568534],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_05946c7e29fbcf2dd484e493f989f7da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6fe864a8f72c60cc1bc3130637c4e6dc.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Wyoming<br>
+            <b>Number Order:</b> 1<br>
+            <b>Total Quantity:</b> 4<br>
+            <b>Total Discount:</b> 0.20<br>
+            <b>GMV:</b> $1,603.14<br>
+            <b>Total Profit:</b> $100.20<br>
+            <b>Total Spend:</b> $1,502.94<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fe864a8f72c60cc1bc3130637c4e6dc.setIcon(icon_05946c7e29fbcf2dd484e493f989f7da);
+            
+    
+            var marker_62fabf4365b60a78573e87a94a5ab92f = L.marker(
+                [43.4849133, -71.6553992],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_eeec2af989d4cc3171ea9204cdbc4e05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_62fabf4365b60a78573e87a94a5ab92f.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> New Hampshire<br>
+            <b>Number Order:</b> 4<br>
+            <b>Total Quantity:</b> 25<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $1,469.97<br>
+            <b>Total Profit:</b> $461.42<br>
+            <b>Total Spend:</b> $1,008.55<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62fabf4365b60a78573e87a94a5ab92f.setIcon(icon_eeec2af989d4cc3171ea9204cdbc4e05);
+            
+    
+            var marker_f93b955e4720e2bc7bfd4dcef6eabbb5 = L.marker(
+                [41.9216734, -93.3122705],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_a15c1ac13047b377106dbc799e50ee5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f93b955e4720e2bc7bfd4dcef6eabbb5.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Iowa<br>
+            <b>Number Order:</b> 6<br>
+            <b>Total Quantity:</b> 25<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $1,207.35<br>
+            <b>Total Profit:</b> $391.76<br>
+            <b>Total Spend:</b> $815.59<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f93b955e4720e2bc7bfd4dcef6eabbb5.setIcon(icon_a15c1ac13047b377106dbc799e50ee5a);
+            
+    
+            var marker_4c43164a7ddfab1d0e4d991e33deadd1 = L.marker(
+                [38.4758406, -80.8408415],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_6d3a68e7fa8072d250bd04a58085e076 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4c43164a7ddfab1d0e4d991e33deadd1.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> West Virginia<br>
+            <b>Number Order:</b> 2<br>
+            <b>Total Quantity:</b> 16<br>
+            <b>Total Discount:</b> 0.30<br>
+            <b>GMV:</b> $1,203.58<br>
+            <b>Total Profit:</b> $182.86<br>
+            <b>Total Spend:</b> $1,020.72<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c43164a7ddfab1d0e4d991e33deadd1.setIcon(icon_6d3a68e7fa8072d250bd04a58085e076);
+            
+    
+            var marker_699327e6c9415428491a005892d89224 = L.marker(
+                [38.27312, -98.5821872],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_43be3a1fa98bbca1f81abe1a2b03387e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_699327e6c9415428491a005892d89224.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Kansas<br>
+            <b>Number Order:</b> 6<br>
+            <b>Total Quantity:</b> 26<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $1,195.53<br>
+            <b>Total Profit:</b> $414.68<br>
+            <b>Total Spend:</b> $780.85<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_699327e6c9415428491a005892d89224.setIcon(icon_43be3a1fa98bbca1f81abe1a2b03387e);
+            
+    
+            var marker_0be5563ae1fe6d11e002b56894319ba7 = L.marker(
+                [44.6471761, -100.348761],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_0277f85b9fa409643220fa562358d423 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0be5563ae1fe6d11e002b56894319ba7.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> South Dakota<br>
+            <b>Number Order:</b> 1<br>
+            <b>Total Quantity:</b> 15<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $1,050.06<br>
+            <b>Total Profit:</b> $302.85<br>
+            <b>Total Spend:</b> $747.21<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0be5563ae1fe6d11e002b56894319ba7.setIcon(icon_0277f85b9fa409643220fa562358d423);
+            
+    
+            var marker_54db094b8871a3c533f276b4371bfd46 = L.marker(
+                [47.6201461, -100.540737],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_e93137d15f99aa55cc09f54c73a37f03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_54db094b8871a3c533f276b4371bfd46.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> North Dakota<br>
+            <b>Number Order:</b> 1<br>
+            <b>Total Quantity:</b> 7<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $836.70<br>
+            <b>Total Profit:</b> $197.72<br>
+            <b>Total Spend:</b> $638.98<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54db094b8871a3c533f276b4371bfd46.setIcon(icon_e93137d15f99aa55cc09f54c73a37f03);
+            
+    
+            var marker_283007e3d61e5d960599881e4aa4a9f9 = L.marker(
+                [45.709097, -68.8590201],
+                {
+}
+            ).addTo(map_f1071bc37b41544653c8729f52ccdfd6);
+        
+    
+            var icon_44df105190e0f95104fc34bf5c4a248b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_283007e3d61e5d960599881e4aa4a9f9.bindTooltip(
+                `<div>
+                     
+        <div style='font-size:13px; line-height:1.5'>
+            <b>State:</b> Maine<br>
+            <b>Number Order:</b> 1<br>
+            <b>Total Quantity:</b> 5<br>
+            <b>Total Discount:</b> 0.00<br>
+            <b>GMV:</b> $547.33<br>
+            <b>Total Profit:</b> $165.29<br>
+            <b>Total Spend:</b> $382.04<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_283007e3d61e5d960599881e4aa4a9f9.setIcon(icon_44df105190e0f95104fc34bf5c4a248b);
+            
+</script>
+</html>
