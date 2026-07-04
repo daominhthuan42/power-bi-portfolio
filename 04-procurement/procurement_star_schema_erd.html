@@ -1,0 +1,141 @@
+
+<style>
+#erd-wrap { padding: 12px 0; }
+#erd svg { width: 100%; }
+</style>
+<div id="erd-wrap">
+  <div id="erd"></div>
+</div>
+<script type="module">
+import mermaid from 'https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs';
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+await document.fonts.ready;
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'base',
+  fontFamily: '"Anthropic Sans", sans-serif',
+  themeVariables: {
+    darkMode: dark,
+    fontSize: '13px',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    lineColor: dark ? '#9c9a92' : '#73726c',
+    textColor: dark ? '#c2c0b6' : '#3d3d3a',
+    primaryColor: dark ? '#3C3489' : '#EEEDFE',
+    primaryTextColor: dark ? '#CECBF6' : '#26215C',
+    primaryBorderColor: dark ? '#534AB7' : '#7F77DD',
+    edgeLabelBackground: dark ? '#2C2C2A' : '#F1EFE8',
+  },
+});
+
+const diagram = `erDiagram
+  FACT_PO {
+    string PO_Number PK
+    date PO_Date FK
+    string PO_Type
+    string PO_Status
+    string Supplier_ID FK
+    string Item_Code FK
+    string Department FK
+    string Contract_ID FK
+    string Requestor_ID FK
+    string Approver_ID FK
+    float Unit_Price
+    int Quantity
+    float Discount_Pct
+    float Discount_Amount
+    float Tax_Pct
+    float Tax_Amount
+    float Line_Total_Gross
+    float Line_Net
+    float Line_Total_Inc_Tax
+    string Currency
+    float Budget_Total
+    float Savings_Amount
+    float Savings_Pct
+    int Days_Late
+    string On_Time_Delivery
+    int Lead_Time_Days
+    string Invoice_Status
+    string Payment_Status
+    string Invoice_Match_Type
+    string Maverick_Spend
+    string Single_Source_Flag
+  }
+  DIM_SUPPLIER {
+    string Supplier_ID PK
+    string Supplier_Name
+    string Supplier_Country
+    string Supplier_Region
+    int Supplier_Tier
+    string Supplier_Status
+    string Supplier_Risk
+    float Supplier_ESG_Score
+    string Payment_Terms
+    string Local_International
+    string Preferred_Supplier
+  }
+  DIM_ITEM {
+    string Item_Code PK
+    string Item_Description
+    string Category
+    string Sub_Category
+    string Unit_of_Measure
+  }
+  DIM_DEPARTMENT {
+    string Department PK
+    string Cost_Centre
+  }
+  DIM_EMPLOYEE {
+    string Employee_ID PK
+    string Employee_Name
+    string Role
+  }
+  DIM_CONTRACT {
+    string Contract_ID PK
+    string Contract_Type
+    date Contract_Start
+    date Contract_End
+  }
+  DIM_DATE {
+    date PO_Date PK
+    int PO_Year
+    string PO_Quarter
+    string PO_Month
+  }
+
+  DIM_SUPPLIER ||--o{ FACT_PO : "Supplier_ID"
+  DIM_ITEM ||--o{ FACT_PO : "Item_Code"
+  DIM_DEPARTMENT ||--o{ FACT_PO : "Department"
+  DIM_CONTRACT ||--o{ FACT_PO : "Contract_ID"
+  DIM_DATE ||--o{ FACT_PO : "PO_Date"
+  DIM_EMPLOYEE ||--o{ FACT_PO : "Requestor_ID"
+  DIM_EMPLOYEE ||--o{ FACT_PO : "Approver_ID"
+`;
+
+const { svg } = await mermaid.render('erd-svg', diagram);
+document.getElementById('erd').innerHTML = svg;
+
+document.querySelectorAll('#erd svg .node').forEach(node => {
+  const firstPath = node.querySelector('path[d]');
+  if (!firstPath) return;
+  const d = firstPath.getAttribute('d');
+  const nums = d.match(/-?[\d.]+/g)?.map(Number);
+  if (!nums || nums.length < 8) return;
+  const xs = [nums[0], nums[2], nums[4], nums[6]];
+  const ys = [nums[1], nums[3], nums[5], nums[7]];
+  const x = Math.min(...xs), y = Math.min(...ys);
+  const w = Math.max(...xs) - x, h = Math.max(...ys) - y;
+  const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  rect.setAttribute('x', x); rect.setAttribute('y', y);
+  rect.setAttribute('width', w); rect.setAttribute('height', h);
+  rect.setAttribute('rx', '8');
+  for (const a of ['fill', 'stroke', 'stroke-width', 'class', 'style']) {
+    if (firstPath.hasAttribute(a)) rect.setAttribute(a, firstPath.getAttribute(a));
+  }
+  firstPath.replaceWith(rect);
+});
+
+document.querySelectorAll('#erd svg .row-rect-odd path, #erd svg .row-rect-even path').forEach(p => {
+  p.setAttribute('stroke', 'none');
+});
+</script>
